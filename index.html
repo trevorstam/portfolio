@@ -7,59 +7,58 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/icons.css">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
   <title>Trevor's Personal Portfolio</title>
 </head>
 
 <body>
   <header>
-    <section class="header-logo">
+    
+      <nav>
+        <div class="icon-menu">
+        <!-- <input type="checkbox"> -->
+        <ul>
+          <a href="#"><li class="tab">Home</li></a>
+          <a href="aboutme.html"><li class="tab">About Me</li></a>
+          <a href="projects.html"><li class="tab">Projects</li></a>
+          <a href="resume.html"><li class="tab">Resume</li></a>
+          <a href="contact.html"><li class="tab">Contact</li></a>
+        </ul>
+        </div>
+      </nav>
+    
       <h2>
         <a href="#home">
-          Trevor Stam
+          Menu
         </a>
       </h2>
-    </section>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    
   </header>
   <main>
     <section id="banner">
-      <h1>Trevor Stam</h1>
-      <h2>
-        Web Development | GIS | Economic Research
-      </h2>
-      <h4>
-        Welcome to my personal portfolio page!
-      </h4>
+      <div class="banner-text">
+        <h1>Trevor Stam</h1>
+        <h2>
+          Web Development | GIS | Economic Research
+        </h2>
+        <h4>
+          Welcome to my personal portfolio page!
+        </h4>
+      </div>
     </section>
-    <section id="about-me">
-      <a href="aboutme.html">
-        <h2>About Me</h2>
-      </a>
-    </section>
-    <section id="projects">
-      <a href="projects.html">
+    <a href="aboutme.html"><section id="about-me" class="card">  
+        <h2>About Me</h2>  
+    </section></a>
+    <a href="projects.html"><section id="projects" class="card">
         <h2>Projects</h2>
-      </a>
-    </section>
-    <section id="resume">
-      <a href="resume.html">
+    </section></a>
+    <a href="resume.html"><section id="resume" class="card">
         <h2>Resume</h2>
-      </a>
-    </section>
-    <section id="contact">
-      <a href="contact.html">
+    </section></a>
+    <a href="contact.html"><section id="contact" class="card">
         <h2>Contact</h2>
-      </a>
-
-    </section>
+    </section></a>
   </main>
   <footer>
     Trevor Stam &copy 2018
