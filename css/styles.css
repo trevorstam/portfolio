@@ -15,6 +15,11 @@ header {
 a {
     text-decoration: none;
     opacity: 1.0;
+    word-wrap:break-word;
+}
+
+a:hover {
+    color: magenta;
 }
 
 h1 {
@@ -22,6 +27,12 @@ h1 {
     font-weight: bold;
     margin-bottom: 2%;
     top: 20%;
+}
+
+.header-title {
+    font-size: 2em;
+    color: rgb(161, 50, 50);
+    margin-bottom: 2%;
 }
 
 h2 {
@@ -152,6 +163,8 @@ h2 a {
     border: 1px solid darkslateblue;
     font-family: 'Inconsolata', monospace;
     position: relative;
+    z-index: 10;
+
 }
 
 .tab:hover {
@@ -169,7 +182,7 @@ nav:hover ul {
 
 /* about me page */
 
-.bio {
+.container {
     margin: 0 auto;
     margin-top: 3%;
     width: 85%;
@@ -186,4 +199,52 @@ nav:hover ul {
     width: auto;
     float: left;
     border: 1px solid darkcyan;
+}
+
+strong {
+    font-weight: bold;
+    color: rgb(161, 50, 50);
+}
+
+
+
+/* projects */
+
+.project {
+    margin: 0 auto;
+    width: 90%;
+    height: 25%;
+    border: 1px solid darkslateblue;
+    margin: 2% 1% 1% 0;
+    border-radius: 20px;
+    display: inline-block;
+    background-image: url(/images/Libya_desert_2.jpg);
+    background-position: center;
+    background-color: rgb(255, 255, 255, 0.8);
+    background-blend-mode: lighten;
+    z-index: -1;
+}
+
+.project-image {
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin: 15px;
+    border: 1px solid;
+    position: relative;
+}
+
+.project li {
+    font-weight: bold;
+    line-height: 1.7em;
+    color: rgb(161, 50, 50);
+    margin: 2px;
+    display: block;
+    text-align: justify;
+}
+
+.project ul {
+    /* float: left; */
+    margin: 10px;
+    /* display: inline-block; */
 }
