@@ -1,168 +1,325 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 1%;
-    font-family: 'Inconsolata', monospace;
-    color: darkslateblue;
+  margin: 1%;
+  font-family: 'Inconsolata', monospace;
+  color: darkslateblue;
 }
 
 header {
-    height: 20%;
+  height: 20%;
 }
 
 a {
-    text-decoration: none;
-    opacity: 1.0;
+  text-decoration: none;
+  opacity: 1.0;
+  word-wrap: break-word;
+}
+
+a:hover {
+  color: magenta;
+}
+
+p {
+  margin: 5px;
 }
 
 h1 {
-    font-size: 5em;
-    font-weight: bold;
-    margin-bottom: 2%;
-    top: 20%;
+  font-size: 5em;
+  font-weight: bold;
+  margin-bottom: 2%;
+  top: 20%;
+}
+
+.header-title {
+  font-size: 2em;
+  color: rgb(161, 50, 50);
+  margin-bottom: 2%;
 }
 
 h2 {
-    font-size: 2em;
-    font-weight: 700;
+  font-size: 2em;
+  font-weight: 700;
 }
 
 h4 {
-    font-size: 1.2em;
-    font-weight: 700;
-    margin-top: 3%;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-top: 3%;
 }
 
-
 #banner {
-    height: 400px;
-    width: 100%;
-    margin-bottom: 2%;
-    margin-top: 1%;
-    background-image: url("/images/Libya_desert_2.jpg");
-    background-position: center;
-    background-color: rgb(255, 255, 255, 0.5);
-    background-blend-mode: lighten;
-    text-align: center;
-    padding-top: 5%;
-    color: rgb(138, 17, 17);
-    position: relative;
-    z-index: -1;
+  height: 400px;
+  width: 100%;
+  margin-bottom: 2%;
+  margin-top: 1%;
+  background-image: url("/images/Libya_desert_2.jpg");
+  background-position: center;
+  background-color: rgb(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
+  text-align: center;
+  padding-top: 5%;
+  color: rgb(138, 17, 17);
+  position: relative;
+  z-index: -1;
 }
 
 .banner-text {
-    display: inline;
+  display: inline;
 }
 
 #about-me {
-    height: 325px;
-    width: 49%;
-    margin-right: 1%;
-    background-image: url("/images/central_algeria.jpg");
-    background-position: center;
-    background-color: rgb(255, 255, 255, 0.2);
-    background-blend-mode: lighten;
-    text-align: center;
-    padding-top: 10%;
-    float: left;
+  height: 325px;
+  width: 49%;
+  margin-right: 1%;
+  background-image: url("/images/central_algeria.jpg");
+  background-position: center;
+  background-color: rgb(255, 255, 255, 0.2);
+  background-blend-mode: lighten;
+  text-align: center;
+  padding-top: 10%;
+  float: left;
 }
 
 #projects {
-    height: 325px;
-    width: 49%;
-    margin-left: 1%;
-    background-image: url("/images/tianshan_mountains.jpg");
-    background-position: center;
-    background-color: rgb(255, 255, 255, 0.5);
-    background-blend-mode: lighten;
-    text-align: center;
-    padding-top: 10%;
-    float: left;
+  height: 325px;
+  width: 49%;
+  margin-left: 1%;
+  background-image: url("/images/tianshan_mountains.jpg");
+  background-position: center;
+  background-color: rgb(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
+  text-align: center;
+  padding-top: 10%;
+  float: left;
 }
 
 #resume {
-    height: 325px;
-    width: 49%;
-    margin-right: 1%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    background-image: url("/images/Larsen_Ice_Shelf.jpg");
-    background-position: center;
-    background-color: rgb(255, 255, 255, 0.3);
-    background-blend-mode: lighten;
-    text-align: center;
-    padding-top: 10%;
-    float: left;
+  height: 325px;
+  width: 49%;
+  margin-right: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-image: url("/images/Larsen_Ice_Shelf.jpg");
+  background-position: center;
+  background-color: rgb(255, 255, 255, 0.3);
+  background-blend-mode: lighten;
+  text-align: center;
+  padding-top: 10%;
+  float: left;
 }
 
 #contact {
-    height: 325px;
-    width: 49%;
-    margin-left: 1%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    background-image: url("/images/libya_desert.jpg");
-    background-position: center;
-    background-color: rgb(255, 255, 255, 0.2);
-    background-blend-mode: lighten;
-    text-align: center;
-    padding-top: 10%;
-    float: left;
+  height: 325px;
+  width: 49%;
+  margin-left: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-image: url("/images/libya_desert.jpg");
+  background-position: center;
+  background-color: rgb(255, 255, 255, 0.2);
+  background-blend-mode: lighten;
+  text-align: center;
+  padding-top: 10%;
+  float: left;
 }
 
 .card {
-    color: darkslateblue;
+  color: darkslateblue;
 }
 
 .card:hover {
-    background-color: rgb(255, 255, 255, 0.8);
-    background-blend-mode: lighten;
-    font-size: 1.4em;
+  background-color: rgb(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+  transition: all 0.9s ease-in-out;
+  font-size: 1.2em;
+  color: rgb(173, 173, 81);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 footer {
-    text-align: center;
-    margin-top: 10%;
-    margin-bottom: 5%;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 /* hamburger menu */
 
 h2 a {
-    margin-left: 60px;
-    color: darkslateblue;
+  margin-left: 60px;
+  color: darkslateblue;
 }
 
 .icon-menu {
-    font-size: 3em;
-    float: left;
-    top: 1px;
-    left: 10px;
-    position: absolute;
+  font-size: 3em;
+  float: left;
+  top: 1px;
+  left: 10px;
+  position: absolute;
 }
 
 .tab {
-    background-color: white;
-    color: darkslateblue;
-    line-height: 30px;
-    padding: 15px;
-    font-size: 0.6em;
-    border: 1px solid darkslateblue;
-    font-family: 'Inconsolata', monospace;
-    position: relative;
+  background-color: white;
+  color: darkslateblue;
+  line-height: 30px;
+  padding: 15px;
+  font-size: 0.6em;
+  border: 1px solid darkslateblue;
+  font-family: 'Inconsolata', monospace;
+  position: relative;
+  z-index: 10;
+
 }
 
 .tab:hover {
-    background-color: darkslateblue;
-    color: white;
+  background-color: darkslateblue;
+  color: white;
 }
 
 nav ul {
-    display: none;
+  display: none;
 }
 
 nav:hover ul {
-    display: block;
+  display: block;
+}
+
+/* about me page */
+
+.container {
+  margin: 3px auto;
+  margin-top: 3%;
+  width: 85%;
+  text-align: justify;
+  font-size: 1.2em;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#redwoods {
+  margin: 0 1% 1% 0;
+  height: 560px;
+  width: auto;
+  float: left;
+  border: 1px solid darkcyan;
+}
+
+strong {
+  font-weight: bold;
+  color: rgb(161, 50, 50);
+}
+
+@media only screen and (max-width: 480px){
+  #redwoods {
+    width: auto;
+    height: 400px;
+  }
+}
+
+
+/* projects */
+
+.project {
+  margin: 0 auto;
+  width: 90%;
+  height: 25%;
+  border: 1px solid darkslateblue;
+  margin: 2% 1% 1% 0;
+  border-radius: 20px;
+  display: inline-block;
+  background-image: url(/images/Libya_desert_2.jpg);
+  background-position: center;
+  background-color: rgb(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+  z-index: -1;
+}
+
+.project-image {
+  width: 250px;
+  height: 250px;
+  float: left;
+  margin: 15px;
+  border: 1px solid;
+  position: relative;
+}
+
+.project li {
+  font-weight: bold;
+  line-height: 1.7em;
+  color: rgb(161, 50, 50);
+  margin: 2px;
+  display: block;
+  text-align: justify;
+}
+
+.project ul {
+  margin: 10px;
+}
+
+/* resume */
+.icons {
+  height: 200px;
+  margin-top: 2%;
+  border: 2px solid rgb(161, 50, 50);
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  background-image: url(/images/tianshan_mountains.jpg);
+  background-color: rgb(255, 255, 255, 1);
+  background-blend-mode: lighten;
+}
+
+figcaption {
+  margin: 1%;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.6em;
+}
+
+.icons:hover {
+  background-color: rgb(255, 255, 255, 0);
+  transition: background-color 1.5s ease-in-out;
+}
+
+figure img:hover {
+  filter: invert(100%);
+}
+
+/* contact */
+#mail-icon {
+  background-image: url(/images/cayman_hero_image.jpg);
+  background-color: rgb(255, 255, 255, 1);
+  background-blend-mode: lighten
+}
+
+#mail-icon:hover {
+  background-color: rgb(255, 255, 255, 0);
+  transition: background-color 1.5s ease-in-out;
+  /* filter: invert(100%); */
+
+}
+
+#linkedin-icon {
+  background-image: url(/images/lagunaCaceres_image.png);
+  background-color: rgb(255, 255, 255, 1);
+  background-blend-mode: lighten
+}
+
+#linkedin-icon:hover {
+  background-color: rgb(255, 255, 255, 0);
+  transition: background-color 1.5s ease-in-out;
+}
+
+#github-icon {
+  background-image: url(/images/deadsea_card.jpg);
+  background-color: rgb(255, 255, 255, 1);
+  background-blend-mode: lighten
+}
+
+#github-icon:hover {
+  background-color: rgb(255, 255, 255, 0);
+  transition: background-color 1.5s ease-in-out;
 }
