@@ -55,7 +55,7 @@ h4 {
   width: 100%;
   margin-bottom: 2%;
   margin-top: 1%;
-  background-image: url("/images/Libya_desert_2.jpg");
+  background-image: url("images/Libya_desert_2.jpg");
   background-position: center;
   background-color: rgb(255, 255, 255, 0.5);
   background-blend-mode: lighten;
@@ -74,7 +74,7 @@ h4 {
   height: 325px;
   width: 49%;
   margin-right: 1%;
-  background-image: url("/images/central_algeria.jpg");
+  background-image: url("images/central_algeria.jpg");
   background-position: center;
   background-color: rgb(255, 255, 255, 0.2);
   background-blend-mode: lighten;
@@ -87,7 +87,7 @@ h4 {
   height: 325px;
   width: 49%;
   margin-left: 1%;
-  background-image: url("/images/tianshan_mountains.jpg");
+  background-image: url("images/tianshan_mountains.jpg");
   background-position: center;
   background-color: rgb(255, 255, 255, 0.5);
   background-blend-mode: lighten;
@@ -102,7 +102,7 @@ h4 {
   margin-right: 1%;
   margin-top: 1%;
   margin-bottom: 1%;
-  background-image: url("/images/Larsen_Ice_Shelf.jpg");
+  background-image: url("images/Larsen_Ice_Shelf.jpg");
   background-position: center;
   background-color: rgb(255, 255, 255, 0.3);
   background-blend-mode: lighten;
@@ -117,7 +117,7 @@ h4 {
   margin-left: 1%;
   margin-top: 1%;
   margin-bottom: 1%;
-  background-image: url("/images/libya_desert.jpg");
+  background-image: url("images/libya_desert.jpg");
   background-position: center;
   background-color: rgb(255, 255, 255, 0.2);
   background-blend-mode: lighten;
@@ -230,7 +230,7 @@ strong {
   margin: 2% 1% 1% 0;
   border-radius: 20px;
   display: inline-block;
-  background-image: url("/images/Libya_desert_2.jpg");
+  background-image: url("images/Libya_desert_2.jpg");
   background-position: center;
   background-color: rgb(255, 255, 255, 0.8);
   background-blend-mode: lighten;
@@ -267,7 +267,7 @@ strong {
   border-radius: 20px;
   text-align: center;
   padding: 20px;
-  background-image: url("/images/tianshan_mountains.jpg");
+  background-image: url("images/tianshan_mountains.jpg");
   background-color: rgb(255, 255, 255, 1);
   background-blend-mode: lighten;
 }
@@ -290,7 +290,7 @@ figure img:hover {
 
 /* contact */
 #mail-icon {
-  background-image: url("/images/cayman_hero_image.jpg");
+  background-image: url("images/cayman_hero_image.jpg");
   background-color: rgb(255, 255, 255, 1);
   background-blend-mode: lighten
 }
@@ -303,7 +303,7 @@ figure img:hover {
 }
 
 #linkedin-icon {
-  background-image: url("/images/lagunaCaceres_image.png");
+  background-image: url("images/lagunaCaceres_image.png");
   background-color: rgb(255, 255, 255, 1);
   background-blend-mode: lighten
 }
@@ -314,7 +314,7 @@ figure img:hover {
 }
 
 #github-icon {
-  background-image: url("/images/deadsea_card.jpg");
+  background-image: url("images/deadsea_card.jpg");
   background-color: rgb(255, 255, 255, 1);
   background-blend-mode: lighten
 }
