@@ -70,62 +70,6 @@ h4 {
   display: inline;
 }
 
-#about-me {
-  height: 325px;
-  width: 49%;
-  margin-right: 1%;
-  background-image: url("../images/central_algeria.jpg");
-  background-position: center;
-  background-color: rgb(255, 255, 255, 0.2);
-  background-blend-mode: lighten;
-  text-align: left;
-  padding-top: 10%;
-  float: left;
-}
-
-#projects {
-  height: 325px;
-  width: 49%;
-  margin-left: 1%;
-  background-image: url("../images/tianshan_mountains.jpg");
-  background-position: center;
-  background-color: rgb(255, 255, 255, 0.5);
-  background-blend-mode: lighten;
-  text-align: center;
-  padding-top: 10%;
-  float: left;
-}
-
-#resume {
-  height: 325px;
-  width: 49%;
-  margin-right: 1%;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  background-image: url("../images/Larsen_Ice_Shelf.jpg");
-  background-position: center;
-  background-color: rgb(255, 255, 255, 0.3);
-  background-blend-mode: lighten;
-  text-align: center;
-  padding-top: 10%;
-  float: left;
-}
-
-#contact {
-  height: 325px;
-  width: 49%;
-  margin-left: 1%;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  background-image: url("../images/libya_desert.jpg");
-  background-position: center;
-  background-color: rgb(255, 255, 255, 0.2);
-  background-blend-mode: lighten;
-  text-align: justify;
-  padding-top: 10%;
-  float: left;
-}
-
 .card {
   color: darkslateblue;
 }
@@ -141,7 +85,7 @@ h4 {
 
 footer {
   text-align: center;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 5%;
 }
 
@@ -259,8 +203,14 @@ strong {
 }
 
 /* contact */
+figcaption {
+  display: none;
+}
 
-figure img:hover {
+a:hover figcaption{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   filter: invert(65%);
   filter: drop-shadow(2px 6px 8px rgb(202, 183, 15));
   transition: filter 1.2s ease-in;
