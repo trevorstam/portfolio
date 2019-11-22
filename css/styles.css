@@ -205,13 +205,6 @@ nav:hover ul {
   display: table;
 }
 
-#redwoods {
-  margin: 0 1% 1% 0;
-  height: 560px;
-  width: auto;
-  float: left;
-  border: 1px solid darkcyan;
-}
 
 strong {
   font-weight: bold;
@@ -275,7 +268,9 @@ figure img:hover {
 }
 
 #icon-links {
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #icon-links a {
   padding: 3%;
