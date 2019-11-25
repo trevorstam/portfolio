@@ -7,67 +7,230 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/icons.css">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
   <title>Trevor's Personal Portfolio</title>
 </head>
 
 <body>
-  <header>
-      <nav>
-        <div class="icon-menu">
-        <ul>
-          <a href="index.html"><li class="tab">Home</li></a>
-          <a href="projects.html"><li class="tab">Projects</li></a>
-          <a href="resume.html"><li class="tab">Resume</li></a>
-          <a href="contact.html"><li class="tab">Contact</li></a>
-        </ul>
-        </div>
-      </nav>
-  </header>
-  <main>
-    <section id="banner">
-      <div class="banner-text">
-        <h1>Trevor Stam</h1>
-        <h2>
-          Software Development Engineer
-        </h2>
-        <h4>
-          Welcome to my personal portfolio page!
-        </h4>
-      </div>
-    </section>
-    <section id="introduction">
-      <p>
-        My name is Trevor Stam and I’m a <strong>software developer</strong> based in Seattle. I hail from a background
-        in <strong>GIS</strong> (geographic information systems) and economics. Although I’m an
-        American citizen, I was born and raised in the Netherlands. I worked for several Dutch universities as an
-        economic researcher. In 2017 I moved to Southern California to work in GIS and have recently moved up to Seattle to establish myself as a developer. I like to create applications with which users can interact, create data points or derive insights from.
-      </p>
-      <br>
-      <p>
-        I work with technologies such as <strong>HTML , CSS, Javascript, JQuery, Python, Express, React/Redux, Node.js, MongoDB, PostgreSQL, SQL Server and AWS</strong> to create usable and visually pleasing applications. My interests lie in <strong>data visualization</strong> and <strong>mapping</strong>. You can find more about my <strong><a href="projects.html">projects</a></strong> on this site. Feel free to reach out to me, connect with me, check out my Github or review my resume.
-      </p>
-    </section>
-    <section id="icon-links">
-      <a href="mailto:trevorstam@gmail.com" target="_blank">
-        <figure><img src="images/mail.png"></figure>
-        <figcaption>E-mail</figcaption>
-      </a>
-      <a href="https://www.linkedin.com/in/trevorstam/" target="_blank">
-        <figure><img src="images/linkedin.png"></figure>
-        <figcaption>LinkedIn</figcaption>
-      </a>
-      <a href="https://github.com/trevorstam" target="_blank">
-        <figure><img src="images/github.png"></figure>
-        <figcaption>Github</figcaption>
-      </a>
-       <a href="https://drive.google.com/file/d/1P3wFwdQrEmngxuj22j4x9Wmq4SIDvPbu/view?usp=sharing" target="_blank">
-           <figure><img src="images/resume.png"></figure>
-           <figcaption>Resume</figcaption>
-       </a>
-    </section>
-  </main>
+  <div class="menu">
+    <input type="radio" id="article1" name="tab" checked>
+    <label for="article1">Home</label>
+    <input type="radio" id="article2" name="tab">
+    <label for="article2">Projects</label>
+
+    <main>
+      <article>
+        <section id="banner">
+          <div class="banner-text">
+            <h1>Trevor Stam</h1>
+            <h2>
+              Software Development Engineer
+            </h2>
+            <img src="images/Trevor Stam 2016-5.jpg" alt="headshot">
+            <h4>
+              Welcome to my personal portfolio page!
+            </h4>
+          </div>
+        </section>
+        <section id="introduction">
+          <p>
+            My name is Trevor Stam and I’m a <strong>software developer</strong> based in Seattle. I hail from a
+            background
+            in <strong>GIS</strong> (geographic information systems) and economics. Although I’m an
+            American citizen, I was born and raised in the Netherlands. I worked for several Dutch universities as an
+            economic researcher. In 2017 I moved to Southern California to work in GIS and have recently moved up to
+            Seattle to establish myself as a developer. I like to create applications with which users can interact,
+            create data points or derive insights from.
+          </p>
+          <br>
+          <p>
+            I work with technologies such as <strong>HTML , CSS, Javascript, JQuery, Python, Express, React/Redux,
+              Node.js, MongoDB, PostgreSQL, SQL Server and AWS</strong> to create usable and visually pleasing
+            applications. My interests lie in <strong>data visualization</strong> and <strong>mapping</strong>. You can
+            find more about my <strong><a href="projects.html">projects</a></strong> on this site. Feel free to reach
+            out
+            to me, connect with me, check out my Github or review my resume.
+          </p>
+        </section>
+        <section id="icon-links">
+          <a href="mailto:trevorstam@gmail.com" target="_blank">
+            <figure><img src="images/mail.png"></figure>
+            <figcaption>E-mail</figcaption>
+          </a>
+          <a href="https://www.linkedin.com/in/trevorstam/" target="_blank">
+            <figure><img src="images/linkedin.png"></figure>
+            <figcaption>LinkedIn</figcaption>
+          </a>
+          <a href="https://github.com/trevorstam" target="_blank">
+            <figure><img src="images/github.png"></figure>
+            <figcaption>Github</figcaption>
+          </a>
+          <a href="https://drive.google.com/file/d/1P3wFwdQrEmngxuj22j4x9Wmq4SIDvPbu/view?usp=sharing" target="_blank">
+            <figure><img src="images/resume.png"></figure>
+            <figcaption>Resume</figcaption>
+          </a>
+        </section>
+      </article>
+      <article>
+        <h1 class="header-title">Projects</h1>
+        <section>
+          <p>You'll find a showcase of my coding projects on this page.</p>
+          <section class="project">
+            <img src="images/flysorter2.png" alt="project-image" class="project-image">
+            <ul>
+              <li>Project title: </li>
+              FlySorter
+              <li>Client:</li>
+              FlySorter
+              <li>Project url: </li>
+              NDA
+              <li>Github repo: </li>
+              <a href="https://github.com/fly-sorter" target="_blank">https://github.com/fly-sorter</a>
+              <li>Collaborators: </li>
+              David Chambers, Ben Harris, Timothy Li, Emery Parks
+              <li>Technologies used: </li>
+              HTML, CSS, Javascript, Node.js, Express, MySQL, AWS Cognito, AWS API Gateway, AWS Lambda, AWS Aurora, AWS
+              Cloudwatch
+              <li>Description:</li>
+              FlySorter is an inventory management application for the Seattle-based company: FlySorter. FlySorter
+              builds machines to sort fruit flies so they can be used for scientific research. This application keeps
+              track of those machine assemblies, sub-assemblies, and the parts that belong to those sub assemblies.
+              These components are displayed on the page and allows the user to click on a sub-assembly to reveal the
+              parts that makeup that sub-assembly. The table also allows the user to filter parts and search for a part
+              in order to make finding particularparts faster and easier for the user.
+              <li>My Contribution:</li>
+              <ol>
+                1. Migrated database from MongoDB to serverless AWS Aurora MySQL <br>
+                2. Re-designed schemas and tables <br>
+                3. Wrote all the queries to enable full-CRUD operations of the application<br>
+              </ol>
+            </ul>
+          </section>
+          <section class="project">
+            <img src="images/foodriver.png" alt="project-image" class="project-image">
+            <ul>
+              <li>Project title: </li>
+              FooDriver
+              <li>Organization:</li>
+              Code Fellows
+              <li>Project url: </li>
+              <a
+                href="http://foodriver.s3-website-us-west-2.amazonaws.com/">http://foodriver.s3-website-us-west-2.amazonaws.com/</a>
+              <li>Github repo: </li>
+              <a href="hhttps://github.com/fooDriver" target="_blank">https://github.com/fooDriver</a>
+              <li>Collaborators: </li>
+              Sara Bahrini, Jen Carrigan, Ben Harris, Timothy Li,
+              <li>Technologies used: </li>
+              Javascript, Express, Node.js, MongoDB, Three.js, Jest
+              <li>Description:</li>
+              fooDriver is a comprehensive digital pantry application for mobile grocery stores and food pantries
+              serving the needs of
+              people with low mobility or limited access to nutritious food. With fooDriver organizations administering
+              mobile food
+              pantries will have an overview of their fleet of mobile pantries, food items stored in the pantry, the
+              drivers and the
+              stops on the routes. Drivers or people working on the mobile pantry can keep track of inventory and
+              restock items
+              depending on the demand along the route. Organizations or individuals donating food items will be able to
+              add to the
+              inventory of the mobile pantries. With fooDriver we intend to streamline the operations of mobile grocery
+              units and
+              bring involved parties closer together in the process. Additionally, an administrative CLI is available
+              for quick
+              connect and data entry.
+              <li>My Contribution:</li>
+              <ol>
+                1. Enriched MongoDB schemas with Mongoose and mongoose-autopopulate package <br>
+                2. Created route methods and handlers with Node.js and Express<br>
+                3. Tested Express routes with Jest<br>
+              </ol>
+            </ul>
+          </section>
+          <section class="project">
+            <img src="images/dirt_finder.JPG" alt="project-image" class="project-image">
+            <ul>
+              <li>Project title: </li>
+              Dirt Finder
+              <li>Organization:</li>
+              Code Fellows
+              <li>Project url: </li>
+              <a href="https://dirtfinder.herokuapp.com" target="_blank">https://dirtfinder.herokuapp.com</a>
+              <li>Github repo: </li>
+              <a href="https://github.com/jlhiskey/dirt-finder301"
+                target="_blank">https://github.com/jlhiskey/dirt-finder301</a>
+              <li>Collaborators: </li>
+              Jason Hiskey, Kristian Esvelt, Daniel Frey
+              <li>Technologies used: </li>
+              HTML, CSS, Javascript, Node.js, Express, PostgreSQL, EJS, JQuery, Twilio API
+              <li>Description:</li>
+              We created the Dirt-Finder for our Code 301 final project at Code Fellows. Dirt-Finder is an application
+              completely
+              dedicated to streamlining the import and export of soil from jobsites. When you fill out the form, it will
+              create a
+              unique user id for your profile. Once you’ve submitted your personal information plus your want or need
+              for a
+              specific
+              soil type, you can send a text to our number. Via the Twilio API you will be able to receive a text with a
+              list of
+              suppliers of your soil type in your zipcode.
+              <li>My Contribution:</li>
+              1. Designed an automatic userkey generator for users to access their customized user page
+            </ul>
+          </section>
+          <section class="project">
+            <img src="images/backnote.JPG" alt="project-image" class="project-image">
+            <ul>
+              <li>Project title:</li>
+              Backnote
+              <li>Organization:</li>
+              Code Fellows
+              <li>Project url:</li>
+              <a href="https://polevoyd.github.io/backnote/" target="_blank">https://polevoyd.github.io/backnote/</a>
+              <li>Github repo:</li>
+              <a href="https://github.com/polevoyd/backnote" target="_blank">https://github.com/polevoyd/backnote</a>
+              <li>Collaborators:</li>
+              Dmitry Polevoy, Pablo Rosales, Brai Frauen
+              <li>Technologies used:</li>
+              HTML, CSS, Javascript
+              <li>Description:</li>
+              For our Code 201 final project at Code Fellows we created Backnote. Backnote is a browser extension for
+              taking quick
+              online notes. Simply highlight desired text in a browser and Backnote will automatically paste it in a new
+              window for
+              you. Take notes on the fly and save it as a text file with just one click.
+              <li>My Contribution:</li>
+              1. Designed and styled the web pages<br>
+              2. Created a newsletter sign-up
+            </ul>
+          </section>
+          <section class="project">
+            <img src="images/UCR_BotGar.jpg" alt="project-image" class="project-image">
+            <ul>
+              <li>Project title:</li>
+              Family Names Search
+              <li>Organization:</li>
+              University of California Riverside: Botanic Garden
+              <li>Project url:</li>
+              <a href="https://beesadmin.github.io/search_family_names/"
+                target="_blank">https://beesadmin.github.io/search_family_names/</a>
+              <li>Collaborators:</li>
+              None
+              <li>Technologies used:</li>
+              HTML, CSS, Javascript, Materialize
+              <li>Description:</li>
+              For the Botanic Gardens at the University of California Riverside, I created a dynamic search list to
+              retrieve plant
+              family names and/or its abbreviation. This was a side project inside a larger project to map all tree and
+              plant species
+              at the UCR Botanic Gardens.
+            </ul>
+          </section>
+        </section>
+      </article>
+
+      <!-- </article> -->
+    </main>
+  </div>
   <footer>
     Trevor Stam &copy 2019
   </footer>
